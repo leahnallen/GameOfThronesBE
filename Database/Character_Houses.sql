@@ -1,3 +1,3 @@
-SELECT "FirstName", "LastName", "HouseName", FirstName||" "|| AS FullName
+SELECT "FirstName", "LastName", "HouseName", FirstName||" "||LastName AS FullName
 FROM [Characters] JOIN Houses
-ON [Characters].Id = [Houses].Id
+ON [Characters].houseid = [Houses].Id
